@@ -7,8 +7,8 @@ public class proov2 {
         ht.put ("Juku", 4.0);
         ht.put ("Kati", 5.0);
         System.out.println(ht.get("Juku");
-        for(String eesnimi: ht.keySet());
-            System.out.println(eesnimi + " - ")
+        for(String eesnimi: ht.keySet()){
+			System.out.println(eesnimi + " - "+ht.get(eesnimi));
     }
-
+    }
 }
