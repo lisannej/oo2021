@@ -1,6 +1,6 @@
 package w01_funktsioon;
 
-    public class Second{
+    public class second {
         public static void main(String[] args){
             System.out.println(myname());
             System.out.println(add(5, 6));
@@ -12,9 +12,17 @@ package w01_funktsioon;
     
             System.out.println(fullName("Lisanne", "Jarv"));
             System.out.println(checkEqual(2, 6));
-            System.out.println(myLogical());
+            System.out.println();
         }
-        public static String myName(){
+        
+        private static void myEqual() {
+        }
+
+        private static char[] myname() {
+            return null;
+        }
+
+        public static String myName() {
             return "Lisanne";
         }
         public static int add(int number1, int number2){

@@ -1,4 +1,6 @@
-public class First {
+package w01_funktsioon;
+
+public class first {
     public static void main(String[] args){
       //System.out.println(args.length);
       int[] numberArray = new int[5];
