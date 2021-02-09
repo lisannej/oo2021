@@ -9,7 +9,7 @@ public class isikukood {
 	public isikukood(String uusSisu){
         sisu=uusSisu;
         if(sisu.length()!=11){
-            throw new RuntimeErrorException(null, "vigane pikkus");
+            throw new RuntimeErrorException(null, sisu + "vigane pikkus");
 
         }
     }
