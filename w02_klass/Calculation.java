@@ -1,12 +1,14 @@
 package w02_klass;
 
 import java.util.Scanner;
-   public class Calculation {
+public class Calculation {
+   public class Calculator {
+      
          double num1;
          double num2;
          double ans;
          char op;
-
+      
       op = reader.nextLine().charAt(0);
       if (op == '+') {
             ans = (num1 + num2);
@@ -29,3 +31,4 @@ import java.util.Scanner;
       }
    }
    
+}

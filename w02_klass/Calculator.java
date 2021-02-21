@@ -2,7 +2,8 @@ package w02_klass;
 import java.util.Scanner;
 
 public class Calculator {
-   public static void main(String[] args) {
+
+      public static void main(String[] args) {
       Scanner reader = new Scanner(System.in);
 
       System.out.println("Enter a number: " );
@@ -24,4 +25,3 @@ public class Calculator {
       System.out.println(num1 + " " + op + " " + num2 + " =" + ans);
    }
 }
-    
