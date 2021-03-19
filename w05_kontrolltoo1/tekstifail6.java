@@ -17,3 +17,4 @@ package w05_kontrolltoo1;
         
         PrintWriter pw=new PrintWriter(new FileWriter("vastus6.txt"));
         pw.println("Pikkuste keskmine on "+k2); pw.close();
+        
