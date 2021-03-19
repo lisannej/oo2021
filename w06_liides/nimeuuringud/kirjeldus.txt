@@ -1,0 +1,13 @@
+Olemas liides TekstistEraldaja 
+käsuga eralda, sisendparameeter String, väljund String
+
+* Koosta TekstistEraldajat realiseeriv EsitaheEraldaja
+
+Katseta EsitaheEraldajat klaviatuurilt sisestatud andmete juures
+
+* Koosta esimese sõna eraldaja
+* Koosta teise sõna eraldaja
+* Koosta kaht eelmist eraldajat kasutav e. perekonnanime eraldaja
+
+Katseta loodud eraldajaid ühes klassis klaviatuurilt 
+ning teises klassis failis tulevate andmete juures.
