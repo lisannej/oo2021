@@ -1,8 +1,9 @@
+// objektide massiivi loomine ja kasutamine
 package w14_seminar;
 
 public class seminar {
     
-    class Main{
+  class Main{
     public static void main(String args[]){
       //create array of employee object  
      Employee[] obj = new Employee[2] ;
