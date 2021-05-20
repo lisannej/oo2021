@@ -1,4 +1,4 @@
-package w07_junit;
+
 
 public class Kalkulaator implements KalkulaatorLiides {
     public double liida(double a, double b){

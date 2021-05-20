@@ -1,4 +1,4 @@
-package w07_junit;
+
 
 public interface KalkulaatorLiides {
     double liida(double a, double b);

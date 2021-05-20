@@ -1,6 +1,8 @@
 {
     "java.project.sourcePaths": [
+        "w05_kontrolltoo1",
+        "w03_klassikomplekt",
         "w02_klass",
-        "w03_klassikomplekt"
+        "w06_liides"
     ]
 }

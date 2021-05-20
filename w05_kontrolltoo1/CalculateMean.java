@@ -12,6 +12,6 @@ public class CalculateMean {
        for(i = 0; i < n; i++) {
           sum+=a[i];
        }
-       System.out.println("Mean ::"+ sum/(float)n);
+       System.out.println("Mean ::"+ sum/n);
     }
  }
