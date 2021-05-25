@@ -8,6 +8,6 @@
 		$lastname = $_POST['lastname'];
 		$conn->save($username, $password, $firstname, $lastname);
 		echo '<script>alert("Successfully saved!")</script>';
-		echo '<script>window.location= "index.php"</script>';
+		echo '<script>window.location= "index.html"</script>';
 	}	
 ?>
