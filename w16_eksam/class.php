@@ -30,5 +30,30 @@
 				return true;
 			}
 		}
-	}
+ 
+		public function login($username, $password){
+			$stmt = $this->conn->prepare("SELECT * FROM `user` WHERE `username` = '$username' && `password` = '$password'") or die($this->conn->error);
+			if($stmt->execute()){
+				$result = $stmt->get_result();
+				$valid = $result->num_rows;
+				$fetch = $result->fetch_array();
+				return array(
+					'user_id'=> $fetch['user_id'],
+					'count'=>$valid
+				);
+			}
+		}
+ 
+		public function user_account($user_id){
+			$stmt = $this->conn->prepare("SELECT * FROM `user` WHERE `user_id` = '$user_id'") or die($this->conn->error);
+			if($stmt->execute()){
+				$result = $stmt->get_result();
+				$fetch = $result->fetch_array();
+				return array(
+					'firstname'=> $fetch['firstname'],
+					'lastname'=>$fetch['lastname']
+				);
+			}	
+		}
+	}	
 ?>
