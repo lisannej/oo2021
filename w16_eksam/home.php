@@ -5,19 +5,12 @@
 ?>
 <html lang = "en">
 	<head>
-		<meta charset = "UTF-8" name "viewport" content = "width-device=width, initial-scale=1"/>
+		<meta charset = "UTF-8" name = "viewport" content = "width-device=width, initial-scale=1"/>
 		<title>OOP PHP Registrarion and Login Form Using MySQLi</title>
 		<link rel = "stylesheet" type = "text/css" href = "css/bootstrap.css" />
 	</head>
 <body>
-	<nav class = "navbar navbar-default">
-		<div class = "container-fluid">
-			<a class = "navbar-brand" href = "https://www.sourcecodester.com">Sourcecodester</a>
-		</div>
-	</nav>
-	<br />
-	<br />
-	<br />
+
 	<div class = "row">
 		<div class = "col-md-4">
 		</div>
