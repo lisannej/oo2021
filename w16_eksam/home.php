@@ -6,7 +6,7 @@
 <html lang = "en">
 	<head>
 		<meta charset = "UTF-8" name = "viewport" content = "width-device=width, initial-scale=1"/>
-		<title>OOP PHP Registrarion and Login Form Using MySQLi</title>
+		<title>Monitory</title>
 		<link rel = "stylesheet" type = "text/css" href = "css/bootstrap.css" />
 	</head>
 <body>
@@ -15,7 +15,7 @@
 		<div class = "col-md-4">
 		</div>
 		<div class = "col-md-4 well">
-			<h4 class = "text-danger">OOP PHP Registration and Login Form Using MySQLi</h4>
+			<h4 class = "text-danger">Monitory</h4>
 			<hr style = "border-top:1px dotted #000;"/>
 			<h3>Welcome:</h3>
 			<?php
