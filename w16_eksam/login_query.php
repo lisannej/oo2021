@@ -12,7 +12,7 @@
 			echo '<script>window.location = "home.php"</script>'; 
 		}else{
 			echo '<script>alert("Invalid username or password")</script>';
-			echo '<script>window.location = "login.php"</script>';
+			echo '<script>window.location = "login.html"</script>';
 		}
 	}
 ?>
