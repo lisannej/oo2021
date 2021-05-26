@@ -9,7 +9,9 @@
 		$check="SELECT username FROM user WHERE username = '$_POST[username]'";
 		if ($check = true)
 		{
-			echo "User Already Exists <br/>";
+			echo '<script>alert("User already exists!")</script>';
+			echo '<script>window.location= "index.html"</script>';
+
 }
 		else{
 			
