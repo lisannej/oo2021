@@ -12,7 +12,7 @@
 
 		//if (mysqli_num_rows($res) > 0) {
 			
-			$row = mysqli_fetch_assoc($res);
+			//$row = mysqli_fetch_assoc($res);
 			if($username==isset($row['username']))
 			{
 					echo "Username already exists";
