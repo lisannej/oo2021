@@ -6,10 +6,10 @@
 	$firstname = $_POST['firstname'];
 	$lastname = $_POST['lastname'];
 	if(ISSET($_POST['signup'])){
-		$check="SELECT COUNT(*) FROM user WHERE username = '$_POST[username]'";
-		if (mysql_query($conn,$check)>=1)
+		$check="SELECT username FROM user WHERE username = '$_POST[username]'";
+		if ($check = true)
 		{
-			echo "User Already in Exists<br/>";
+			echo "User Already Exists <br/>";
 }
 		else{
 			
