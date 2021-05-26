@@ -7,7 +7,7 @@
 	$lastname = $_POST['lastname'];
 	if(ISSET($_POST['signup'])){
 		$check="SELECT COUNT(*) FROM user WHERE username = '$_POST[username]'";
-		if (mysqli_query($conn,$check)>=1)
+		if (mysql_query($conn,$check)>=1)
 		{
 			echo "User Already in Exists<br/>";
 }
