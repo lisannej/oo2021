@@ -6,7 +6,7 @@
 		$password = $_POST['password'];
 		$firstname = $_POST['firstname'];
 		$lastname = $_POST['lastname'];
-		$check = $conn->prepare("SELECT username FROM user WHERE username = '$_POST[username]'");
+		$check = $conn->save("SELECT username FROM user WHERE username = '$_POST[username]'");
 		echo $conn->error;
 			if($check!=false){
 				echo '<script>alert("User already exists!")</script>';
