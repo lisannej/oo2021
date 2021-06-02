@@ -22,13 +22,23 @@
 		}
  
 		public function save($username, $password, $firstname, $lastname){
-			$stmt = $this->conn->prepare("INSERT INTO `user` (username, password, firstname, lastname) VALUES(?, ?, ?, ?)") or die($this->conn->error);
-			$stmt->bind_param("ssss", $username, $password, $firstname, $lastname);
-			if($stmt->execute()){
+			$stmt = $this->conn->prepare("SELECT * FROM `user` WHERE `username` = '$username' && `password` = '$password'") or die($this->conn->error);
+			if($stmt!=false){
+				echo '<script>alert("User already exists!")</script>';
+				echo '<script>window.location= "index.html"</script>';
+			}
+			else{	
+				$stmt = $this->conn->prepare("INSERT INTO `user` (username, password, firstname, lastname) VALUES(?, ?, ?, ?)") or die($this->conn->error);
+				$stmt->bind_param("ssss", $username, $password, $firstname, $lastname);
+				if($stmt->execute()){
 				$stmt->close();
 				$this->conn->close();
+				echo '<script>alert("Successfully saved!")</script>';
+				echo '<script>window.location= "login.html"</script>';
 				return true;
 			}
+		}	
+			
 		}
  
 		public function login($username, $password){
