@@ -23,6 +23,11 @@
  
 		public function save($username, $password, $firstname, $lastname){
 			$stmt = $this->conn->prepare("SELECT * FROM `user` WHERE `username` = '$username' && `password` = '$password'") or die($this->conn->error);
+			$stmt->bind_param("ss", $username, $password);
+			if($stmt->execute()){
+				$stmt->close();
+				$this->conn->close();
+			}
 			if($stmt!=false){
 				echo '<script>alert("User already exists!")</script>';
 				echo '<script>window.location= "index.html"</script>';
