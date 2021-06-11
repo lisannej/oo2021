@@ -1,8 +1,8 @@
 package w10_tunnirakenduse_lahendus;
 public class Kodutoo {
-    // generic method printArray
+    // geneerika meetod jada tegemine
     public static < E > void printArray( E[] inputArray ) {
-       // Display array elements
+       // Naita elemente
        for(E element : inputArray) {
           System.out.printf("%s ", element);
        }
@@ -20,27 +20,27 @@ public class Kodutoo {
      }
  
     public static void main(String args[]) {
-       // Create arrays of Integer, Double and Character
+       // Jadad
        Integer[] intArray = { 1, 2, 3, 4, 5 };
        Double[] doubleArray = { 1.1, 2.2, 3.3, 4.4 };
        Character[] charArray = { 'H', 'E', 'L', 'L', 'O' };
  
-       System.out.println("Array integerArray contains:");
-       printArray(intArray);   // pass an Integer array
+       System.out.println("Jada:");
+       printArray(intArray);   
 
        System.out.println(" Jada umberpooramine: ");
-       reverseArray(intArray);   // pass an Integer array
+       reverseArray(intArray);  
  
-       System.out.println("\nArray doubleArray contains:");
-       printArray(doubleArray);   // pass a Double array
+       System.out.println("\n Topeltjada:");
+       printArray(doubleArray);  
  
-       System.out.println("\n Double jada umberpooramine:");
-       reverseArray(doubleArray);   // pass a Double array
+       System.out.println("\n Topeltjada umberpooramine:");
+       reverseArray(doubleArray);  
 
-       System.out.println("\nArray characterArray contains:");
-       printArray(charArray);   // pass a Character array
+       System.out.println("\nTahemargid:");
+       printArray(charArray);  
 
        System.out.println("\n Tahemarkide jada umberpooramine: ");
-       reverseArray(charArray);   // pass a Character array
+       reverseArray(charArray);   
     }
  } 
