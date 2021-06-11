@@ -1,4 +1,5 @@
 package w10_tunnirakenduse_lahendus;
+
 public class Kodutoo {
     // geneerika meetod jada tegemine
     public static < E > void printArray( E[] inputArray ) {
